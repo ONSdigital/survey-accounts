@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ONS Survey Account Prototypes</title>
+  <meta name="description" content="ONS - Survey Account Prototypes
+">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <link rel="stylesheet" href="/survey-accounts/css/style.css">
+  <link rel="canonical" href="https://onsdigital.github.io/survey-accounts/">
+  <link rel="alternate" type="application/rss+xml" title="ONS Survey Account Prototypes" href="https://onsdigital.github.io/survey-accounts/feed.xml">
+</head>
+
+
+  <body>
+
+    <div class="susi">
+  <div class="susi-container">
+    <h1>Survey Accounts</h1>
+    <div class="susi-inner">
+      <label>Username</label>
+      <input type="text" placeholder="yourname@ons.gov.uk">
+      <label>Password</label>
+      <div class="input-wrap">
+        <input type="password" autocomplete="off">
+        <span class="password-toggle">SHOW</span>
+      </div>
+      <!--<input type="submit" value="Sign In">-->
+      <a href="dashboard.html" class="cta">Sign In</a>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script>
+    $(function() {
+      var qpopover = $(".question-popover").html();
+      $(".questionnaire-actions").append(qpopover);
+
+      var spopover = $(".survey-popover").html();
+      $(".survey-actions").append(spopover);
+
+      $(".questionnaire-actions").click(function() {
+        $('.questionnaire-actions').not(this).each(function(){
+          $(".popover-actions").removeClass("on");
+        });
+        $(this).find(".popover-actions").toggleClass("on off");
+      });
+
+      $(".survey-actions").click(function() {
+        $('.survey-actions').not(this).each(function(){
+          $(".popover-actions").removeClass("on");
+        });
+        $(this).find(".popover-actions").toggleClass("on off");
+      });
+
+      $(".comments").click(function(){
+        alert("placeholder for comment status bubble")
+      });
+
+    });
+    </script>
+
+  </body>
+
+</html>
