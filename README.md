@@ -1,19 +1,17 @@
-# eq-author-proto
+# ONS Survey Accounts 
 eq tool authoring prototype
 
 Create a folder on your machine where you'd like the prototype to live and navigate to it in your terminal 
 
 #Clone the project 
 
-$ git clone https://github.com/ONSdigital/eq-dahl-prototypes.git
+$ git clone https://github.com/ONSdigital/survey-accounts.git
 
 #Install jekyll
 
-$ gem install jekyll
+$ gem install jekyll 
 
-#Switch to the prototype directory
-
-$ cd eq-dahl-prototypes
+(may need 'sudo gem install jekyll')
 
 #Run Jekyll
 
@@ -21,6 +19,6 @@ $ jekyll serve
 
 #Pushing changes
 
-commit and push to gh-pages branch
+commit and push to the gh-pages branch
 
-view at https://onsdigital.github.io/eq-dahl-prototypes/
+view at https://onsdigital.github.io/survey-accounts/
