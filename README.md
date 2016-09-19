@@ -1,5 +1,4 @@
 # ONS Survey Accounts 
-eq tool authoring prototype
 
 Create a folder on your machine where you'd like the prototype to live and navigate to it in your terminal 
 
